@@ -366,12 +366,6 @@ local Section5 = Tab4:NewSection("Granades")
 local Button2 = Tab4:NewButton("Anti-Flashbang", function()
 	PLAYER.PlayerGui.Blnd:Destroy()
 end)
-local Button2 = Tab4:NewButton("Anti-Smoke", function()
-	worksp = PLAYER.Character.Parent
-	print("Got Workspace")
-	worksp["Ray_Ignore"].Smokes:Destroy()
-end)
-
 
 for i,plr in pairs(game.Players:GetChildren()) do
     AddBox(plr)
