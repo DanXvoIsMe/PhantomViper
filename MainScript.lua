@@ -367,6 +367,19 @@ local Button2 = Tab4:NewButton("Anti-Flashbang", function()
 	PLAYER.PlayerGui.Blnd:Destroy()
 end)
 
+local Tab5 = Init:NewTab("Client")
+local Section6 = Tab5:NewSection("Music")
+local Button3 = Tab5:NewButton("Play", function()
+	local b = Instance.new("Sound")
+	b.Name = "musik"
+    b.Parent = PLAYER
+    b.Looped = true
+    b.Playing = true
+	b.Volume = 10
+    b.SoundId = "http://www.roblox.com/asset/?id=15689451063"
+	b:Play()
+end)
+
 for i,plr in pairs(game.Players:GetChildren()) do
     AddBox(plr)
 	AddTracers(plr)
